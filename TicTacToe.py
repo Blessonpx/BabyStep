@@ -13,6 +13,7 @@ def check_win():
             else:
                 print "Player 2 Wins!!!"
                 return True
+## First Diagonal
     elif (a[0]==a[4] and a[0]==a[8]):
             if a[0]=="X":
                 print "Player 1 Wins!!!"
@@ -20,6 +21,15 @@ def check_win():
             else:
                 print "Player 2 Wins!!!"
                 return True
+## Second Diagonal
+     elif (a[2]==a[4] and a[2]==a[6]):
+            if a[0]=="X":
+                print "Player 1 Wins!!!"
+                return True
+            else:
+                print "Player 2 Wins!!!"
+                return True
+
     elif (a[1]==a[4] and a[1]==a[7]):
             if a[1]=="X":
                     print "Player 1 Wins!!!"
@@ -46,6 +56,7 @@ def check_win():
             else:
                 print "Player 2 Wins!!!"
                 return True
+     
 
 ## Main Body of Game
 from IPython.display import clear_output
